@@ -13,42 +13,63 @@ font-family: 'Russo One', sans-serif;
     flex-direction: column;
 }
 
-nav, article, aside, footer{
+
+.wrapper{
+    display: grid;
+    grid-template-columns: repeat(4);
+    grid-template-rows: auto;
+    margin: 0;
+
+    grid-template-areas: 
+    "navbar navbar navbar"
+    "logo logo logo"
+    "header header header"
+    "information information information"
+    "footer footer footer";
+}
+
+nav, article, aside, footer, header{
     background-color: white;
     padding: 1%;
 }
 
-nav{
-    height: 50px;
+.navbar{
+    height: 30px;
     background-color: white;
     display: flex;
     margin-bottom: 10px;
-    justify-content: space-evenly;
 
+    grid-area:navbar;
+    grid-column: 1/-1;
+    
     align-items: center;
 }
 
-nav ul{
+.navbar ul{
     padding: 0;
     list-style-type: none;
-    flex: 2;
     display: flex;
+    justify-content: space-evenly;
+    width: 100%;
 }
 
-nav li{
+.navbar li{
     display: inline;
     text-align: center;
-    flex: 1;
-    justify-content: space-between;
 }
 
-nav a{
+.navbar a{
     display: inline-block;
     font-size: 1.5rem;
     text-transform: uppercase;
     text-decoration: none;
     color: black;
+    text-shadow: 2px 2px #aaaaaa;
+}
 
+a:hover{
+    color: orange;
+    
 }
 
 input[type="search"]{
@@ -62,9 +83,11 @@ input{
     
 }
 
-.content {
-    flex: 1 0 auto;
-  }
+.Logo{
+    grid-area: logo;
+    grid-column: 1/-1;
+
+}
 
 .footer{
     background-color: white;
@@ -75,5 +98,25 @@ input{
     align-items: center;
     position: relative;
     flex-shrink: 0;
+    grid-area: footer;
 
+}
+
+.header{
+    grid-area: header;
+    grid-column: 1/-1;
+}
+
+.information{
+    display: grid;
+    grid-area: information;
+    grid-column: 1/-1;
+    grid-template-columns: repeat(3);
+}
+
+.information article{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 2rem 1rem;
 }
