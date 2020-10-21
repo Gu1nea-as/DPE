@@ -26,6 +26,8 @@ font-family: 'Russo One', sans-serif;
     "header header header"
     "information information information"
     "footer footer footer";
+
+    
 }
 
 nav, article, aside, footer, header{
@@ -86,6 +88,8 @@ input{
 .Logo{
     grid-area: logo;
     grid-column: 2/3;
+    display: flex;
+    justify-content: center;
 }
 
 .footer{
