@@ -85,8 +85,7 @@ input{
 
 .Logo{
     grid-area: logo;
-    grid-column: 1/-1;
-
+    grid-column: 2/3;
 }
 
 .footer{
@@ -105,13 +104,14 @@ input{
 .header{
     grid-area: header;
     grid-column: 1/-1;
+    text-align: center;
 }
 
 .information{
     display: grid;
     grid-area: information;
     grid-column: 1/-1;
-    grid-template-columns: repeat(3);
+    grid-template-columns: repeat(3, 1fr);
 }
 
 .information article{
