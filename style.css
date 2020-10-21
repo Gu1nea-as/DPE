@@ -124,3 +124,41 @@ input{
     text-align: center;
     padding: 2rem 1rem;
 }
+
+.GalWrap{
+    display: grid;
+    grid-template-columns: repeat(3);
+    grid-template-rows: 2;
+    margin: 0;
+
+
+    grid-template-areas: 
+    "navbar navbar navbar"
+    ". vid ."
+    "img1 img2 img3"
+    "img4 img5 img6"
+    "footer footer footer";
+}
+
+.vid{
+    grid-area: vid;
+}
+.img1{
+    grid-area: img1;
+    
+}
+.img2{
+    grid-area: img2;
+}
+.img3{
+    grid-area: img3;
+}
+.img4{
+    grid-area: img4;
+}
+.img5{
+    grid-area: img5;
+}
+.img6{
+    grid-area: img6;
+}
