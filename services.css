@@ -22,9 +22,9 @@ font-family: 'Russo One', sans-serif;
 
     grid-template-areas: 
     "navbar navbar navbar"
-    "logo logo logo"
-    "header header header"
     "information information information"
+    "header header header"
+    "packages packages packages"
     "footer footer footer";
 
     
@@ -125,3 +125,24 @@ input{
     padding: 2rem 1rem;
 }
 
+.packages{
+    display: grid;
+    grid-area: packages;
+    grid-column: 1/-1;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.packages article{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 2rem 1rem;
+}
+
+.sub{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 2rem 1rem;
+    grid-column: 1/-1;
+}
