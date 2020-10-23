@@ -24,12 +24,39 @@
     
 
     <section class="Logo">
-        <img src="logof.png" width="75%">
+    
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+  
+        <script type="text/javascript">
+      $(document).ready(function(){
+              var counter=0
+              var increment = 1;
+              
+          $("#cookie").click(function(){
+              counter += increment;
+              $("#counter").html("<h1>You have pet the dog "+counter+" times");
+          if (counter>=20){
+              increment = 1;
+          }
+          
+          })
+          })
+        </script>
+        <title>Cookie clicker!</title>
+      </head>
+      <body>
+      <div id="counter">
+        <h1>Pet me</h1>
+      </div>
+      <div id="cookie">
+        <img src="logof.png" width="75%" >
+      </div>
     </section>
+    
         <header class="header"><h1>Welcome To Dog Petting Enterprise!</h1></header>
     
         
-    </section>
+    
     <section class="footer">&#169;DPE All Rights Reserved. Contact Us: (623)-000-0000</div>
     </div>
 </body>

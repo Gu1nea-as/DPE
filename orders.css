@@ -135,3 +135,10 @@ input{
   .donate-now label:hover {
     background: #DDD;
   }
+  .donate-now .price{
+    font-size: 1.5rem;
+  }
+  .donate-now .title{
+    text-align: justify;
+    font-size: 1.5rem;
+  }
