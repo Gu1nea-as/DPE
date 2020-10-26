@@ -21,11 +21,11 @@ font-family: 'Russo One', sans-serif;
     margin: 0;
 
     grid-template-areas: 
-    "navbar navbar navbar"
-    "logo logo logo"
-    "header header header"
-    "information information information"
-    "footer footer footer";
+    "navbar navbar navbar navbar"
+    "logo logo logo logo"
+    "header header header header"
+    "information information information information"
+    "footer footer footer footer";
 
     
 }
@@ -107,6 +107,7 @@ input{
 
 .header{
     grid-area: header;
+    /* grid-row: 3/4; */
     grid-column: 1/-1;
     text-align: center;
 }
