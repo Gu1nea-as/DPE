@@ -87,12 +87,13 @@ input{
 
 
   .donate-now {
+    
     display: flex;
     flex-direction: column;
     background: white;
     list-style-type: none;
     margin: 5px;
-    padding: 100px;
+    padding: 10px;
   }
   
   .donate-now li {
@@ -142,3 +143,19 @@ input{
     text-align: justify;
     font-size: 1.5rem;
   }
+  textarea{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: solid 15px #bd91ff;
+    resize: none;
+    font-family: 'Russo One';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Russo One'), local('RussoOne-Regular'), url(https://fonts.gstatic.com/s/russoone/v9/Z9XUDmZRWg6M1LvRYsHOy8mJrrg.woff2) format('woff2');
+  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+  fill-opacity: 0.5;
+}
+
